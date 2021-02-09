@@ -3,6 +3,7 @@ const {getAll , create, getSingleTransaction , update , remove} = require('../co
 const authenticate = require('../authenticate')
 
 router.get('/' , authenticate , getAll)
+// router.get('/' ,getAll)
 
 router.post('/' , authenticate , create)
 

@@ -12,10 +12,10 @@ const TransactionSchema = new Schema({
         required : true
     },
     note: String,
-    author: [{
+    author: {
         type: Schema.Types.ObjectId,
         ref: 'User'
-    }]
+    }
 }, {timestamps : true})
 
 const Transaction = mongoose.model('Transaction' , TransactionSchema)

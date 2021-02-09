@@ -31,7 +31,8 @@ app.listen(PORT , () => {
   mongoose.connect(`mongodb+srv://nodeMongoose:nodeMongoose@cluster0.5trbi.mongodb.net/nodeMongoose?retryWrites=true&w=majority`,
         {  useNewUrlParser: true,
           useFindAndModify: true,
-          useCreateIndex: true },
+          useCreateIndex: true ,
+          useUnifiedTopology: true },
         () => {
         console.log('Database Connected...')
     });
